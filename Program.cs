@@ -6,13 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<DataService>();
 builder.Services.AddSingleton<AlertService>();
-builder.Services.AddScoped<EmailService>();
+builder.Services.AddSingleton<EmailService>();
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
+app.MapGet("/", () => "Valid endpoints: /last (dashbloard lol), /testmail (sends test email)");
 
 app.MapGet("/post/machine/{machine}/percent_full/{percent_use}",
     (string machine, int percent_use, DataService ds) => 
