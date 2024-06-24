@@ -1,6 +1,5 @@
 ﻿
 using System.Net.Mail;
-using System.Reflection.PortableExecutable;
 
 namespace SpaceCheckSimple;
 
