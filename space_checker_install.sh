@@ -22,4 +22,4 @@ cron_entry="* * * * * $script_path $api_url"
 # Add the cron job to the root user's crontab
 (sudo crontab -l 2>/dev/null; echo "$cron_entry") | sudo crontab -
 
-echo "Cron job has been successfully created to run $script_path every minute as root."s
+echo "Cron job has been successfully created to run $script_path every minute as root."
