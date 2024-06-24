@@ -7,6 +7,12 @@ script_dir="$(pwd)"
 # Define the path to the space_checker.sh script
 script_path="$script_dir/space_checker.sh"
 
+# Download the space_checker.sh script
+sudo curl -sSL "https://raw.githubusercontent.com/urza/SpaceChecker/main/space_checker.sh" -o "$script_path"
+
+# Make the space_checker.sh script executable
+sudo chmod +x "$script_path"
+
 # Get the API URL from command-line argument
 api_url="$1"
 
