@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script creates cron job (as root) that exexutes space_checker.sh periodically
+# This script creates cron job (as root) that executes space_checker.sh periodically
 
 script_dir="$(pwd)"
 
