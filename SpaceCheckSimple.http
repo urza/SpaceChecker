@@ -1,0 +1,9 @@
+@SpaceCheckSimple_HostAddress = http://localhost:5079
+
+GET {{SpaceCheckSimple_HostAddress}}/post/machine/local/percent_full/11
+
+Accept: application/json
+
+###
+
+GET {{SpaceCheckSimple_HostAddress}}/last
