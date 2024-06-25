@@ -2,7 +2,7 @@ Very simple way how to get email alert when one of your linux servers/VMs/VPS is
 
 ![space_checker_diagram](https://github.com/urza/SpaceChecker/assets/189804/9358d584-32a8-48b3-bc86-345f768aa950)
 
-## 1. Install HTTP API in docker. This will receive information from your servers. And if some server has less then 10% free space it will send you email.
+## 1. Install HTTP API in docker. This will receive information from your servers. And if some server has less than 10% free space it will send you email.
 
 ```
 docker pull ghcr.io/urza/spacechecker:main && docker run -d -p 7373:8080 --restart=always --name SpaceCheckAPI -e EmailFrom='FROM@EMAIL' -e EmailTo='TO@EMAIL' -e SmtpUserName='SMTP_LOGIN' -e SmtpPwd='SMTP_PASSWORD' -e SmtpServer='SMTP_SERVER' ghcr.io/urza/spacechecker:main
