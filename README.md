@@ -15,7 +15,7 @@ Check it is running http://localhost:7373 - you should see a message with list o
 Then grab the URL where this is accesible and reachable from your servers. You may want to put this behind [reverse proxy](https://nginxproxymanager.com/ "reverse proxy").
 
 
-## 2. Install the curl script that will periodically post information about disk usage from your servers to the api. It will send it's hostname and % usage of the filesystem mounted on "/"
+## 2. Install the cron script on your servers/VMs/VPS etc that you want to monitor. They will periodically post information about their disk ("/") usage to the api. 
 
     curl -sSL "https://raw.githubusercontent.com/urza/SpaceChecker/main/space_checker_install.sh" | sh -s "http(s)://API_ADDRESS"
 
