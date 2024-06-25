@@ -17,7 +17,7 @@ Then grab the URL where this is accesible and reachable from your servers. You m
 
 ## 2. Install the curl script that will periodically post information about disk usage from your servers to the api. It will send it's hostname and % usage of the filesystem mounted on "/"
 
-    curl -sSL "https://raw.githubusercontent.com/urza/SpaceChecker/main/space_checker_install.sh" && sh space_checker_install.sh "http(s)://API_ADDRESS"
+    curl -sSL "https://raw.githubusercontent.com/urza/SpaceChecker/main/space_checker_install.sh" | sh -s "http(s)://API_ADDRESS"
 
 Replace `http(s)://API_ADDRESS` with your API's real address. 
 
